@@ -7,4 +7,8 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#fff",
   },
+
+  title: {
+    fontFamily: "Poppins-Regular",
+  },
 });
