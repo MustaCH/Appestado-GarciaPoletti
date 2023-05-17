@@ -1,7 +1,7 @@
-import { Categories } from "./screens";
 import { ActivityIndicator, View } from "react-native";
 import { useFonts } from "expo-font";
 import { styles } from "./styles";
+import AppNavigator from "./navigation/index";
 
 export default function App() {
   const [loaded] = useFonts({
@@ -19,5 +19,5 @@ export default function App() {
       </View>
     );
   }
-  return <Categories />;
+  return <AppNavigator />;
 }
