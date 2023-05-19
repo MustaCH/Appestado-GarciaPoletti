@@ -1,16 +1,28 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
+import { COLORS } from "../../constants/index";
 import { Categories, Product, Products } from "../../screens";
 
 const Stack = createNativeStackNavigator();
 
 const MainNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="Categories">
+    <Stack.Navigator
+      initialRouteName="Categories"
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: COLORS.primary,
+        },
+        headerTintColor: COLORS.terciary,
+        headerTitleStyle: {
+          fontFamily: "Poppins-SemiBold",
+        },
+        headerTitleAlign: "center",
+      }}
+    >
       <Stack.Screen
         name="Categories"
         component={Categories}
-        options={{ headerShown: false }}
+        options={{ headerShown: true }}
       />
       <Stack.Screen name="Products" component={Products} />
       <Stack.Screen name="Product" component={Product} />
