@@ -1,18 +1,38 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
-import { styles } from "./styles";
-import { COLORS } from "../../constants";
+import { Text, Button, SafeAreaView, FlatList } from "react-native";
 
-const Products = ({ navigation }) => {
+import { styles } from "./styles";
+import { PRODUCTS } from "../../constants";
+import ProductItem from "../../components/product-item";
+
+const Products = ({ navigation, route }) => {
+  const { categoryId } = route.params;
+
+  const onSelected = (item) => {
+    navigation.navigate("Product", {
+      productId: item.id,
+      name: item.name,
+    });
+  };
+
+  const filteredProducts = PRODUCTS.filter(
+    (product) => product.category === categoryId
+  );
+
+  const renderItem = ({ item }) => (
+    <ProductItem item={item} onSelected={onSelected} />
+  );
+
+  const keyExtractor = (item) => item.id.toString();
+
   return (
-    <View style={styles.container}>
-      <Text>Products</Text>
-      <Button
-        title="See Product"
-        color={COLORS.secondary}
-        onPress={() => navigation.navigate("Product")}
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        data={filteredProducts}
+        renderItem={renderItem}
+        keyExtractor={keyExtractor}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 

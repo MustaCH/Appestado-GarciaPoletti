@@ -28,5 +28,6 @@ export const styles = StyleSheet.create({
   name: {
     fontFamily: "Poppins-Regular",
     fontSize: 20,
+    color: COLORS.secondary,
   },
 });

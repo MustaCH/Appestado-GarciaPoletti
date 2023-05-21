@@ -10,6 +10,8 @@ export const PRODUCTS = [
 
     description:
       "1 | PROCESADOR AMD RYZEN 3200G / 1 | MOTHER A320M / 1 | MEMORIA 8GB 3200MHZ / 1 | DISCO SSD 480GB / 1 | FUENTE GENERICA / 1 | GABINETE KIT (INCLUYE TECLADO Y MOUSE)",
+
+    brand: "",
   },
 
   {
@@ -24,7 +26,7 @@ export const PRODUCTS = [
     description:
       "1 | PROCESADOR AMD RYZEN 5 5600G / 1 | MB AMD A320M / 2 | MEMORIA 8GB 3200 MHZ FURY / 1 | DISCO SSD 480 GB / 1 | FUENTE GENERICA / 1 | GABINETE KIT (INCLUYE TECLADO Y MOUSE)",
 
-    weight: "150gr",
+    brand: "",
   },
 
   {
