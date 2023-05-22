@@ -34,4 +34,11 @@ export const styles = StyleSheet.create({
     fontFamily: "Poppins-Light",
     color: COLORS.background,
   },
+
+  image: {
+    width: 200,
+    height: 200,
+    borderRadius: 10,
+    marginVertical: 10,
+  },
 });
