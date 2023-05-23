@@ -4,7 +4,7 @@ import { Categories, Product, Products } from "../../screens";
 
 const Stack = createNativeStackNavigator();
 
-const MainNavigator = () => {
+const ShopNavigator = () => {
   return (
     <Stack.Navigator
       initialRouteName="Categories"
@@ -22,20 +22,24 @@ const MainNavigator = () => {
       <Stack.Screen
         name="Categories"
         component={Categories}
-        options={{ headerShown: false }}
+        options={{ headerShown: true }}
       />
       <Stack.Screen
         name="Products"
         component={Products}
-        options={({ route }) => ({ title: route.params.name })}
+        options={({ route }) => ({
+          title: route.params.name,
+        })}
       />
       <Stack.Screen
         name="Product"
         component={Product}
-        options={({ route }) => ({ title: route.params.name })}
+        options={({ route }) => ({
+          title: route.params.name,
+        })}
       />
     </Stack.Navigator>
   );
 };
 
-export default MainNavigator;
+export default ShopNavigator;

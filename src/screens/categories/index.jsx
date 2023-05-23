@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, SafeAreaView, View } from "react-native";
+import { FlatList, SafeAreaView } from "react-native";
 
 import { styles } from "./styles";
 import CategoryItem from "../../components/category-item";

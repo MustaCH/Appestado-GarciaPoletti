@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Button, SafeAreaView, FlatList } from "react-native";
+import { SafeAreaView, FlatList } from "react-native";
 
 import { styles } from "./styles";
 import { PRODUCTS } from "../../constants";
