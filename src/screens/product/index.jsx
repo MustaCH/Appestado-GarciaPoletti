@@ -6,11 +6,7 @@ import { PRODUCTS } from "../../constants";
 const Product = ({ route }) => {
   const { productId } = route.params;
 
-  console.warn(route.params);
-
   const product = PRODUCTS.find((product) => product.id === productId);
-
-  console.warn("ID: " + productId);
 
   return (
     <ScrollView>
