@@ -78,7 +78,7 @@ export const PRODUCTS = [
 
     name: "NOTEBOOK ASUS 15.6 R5 4600H 16GB 512GB PCIE GTX1650 W11H",
 
-    price: 1.5,
+    price: 150000,
 
     description:
       "Modelo-90NR07G7-M00BH0 / Nº Parte-FA506IHRB-HN083W / Pantalla -15.6 FHD (1920 x 1080) 16 / Procesador AMD Ryzen™ 5 4600H Mobile Processor (6-core/12-thread, 11MB Cache, 4.0 GHz max boost) / Memoria 8GB DDR4 (EXTRAIBLE) + 8GB DDR4 (EXTRAIBLE) / Disco-512GB PCIe® 3.0 NVMe™ M.2 SSD / VGA-NVIDIA® GeForce GTX™ 1650 4gb GDDR6 / S.O.-Windows 11 Home",
