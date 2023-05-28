@@ -2,6 +2,8 @@ import { ActivityIndicator, View } from "react-native";
 import { useFonts } from "expo-font";
 import AppNavigator from "./navigation";
 import { styles } from "./styles";
+import store from "./store/index";
+import { Provider } from "react-redux";
 
 export default function App() {
   const [loaded] = useFonts({
@@ -19,5 +21,9 @@ export default function App() {
       </View>
     );
   }
-  return <AppNavigator />;
+  return (
+    <Provider store={store}>
+      <AppNavigator />
+    </Provider>
+  );
 }

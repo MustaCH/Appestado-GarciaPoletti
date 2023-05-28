@@ -30,4 +30,9 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     color: COLORS.secondary,
   },
+
+  image: {
+    height: 100,
+    width: 100,
+  },
 });
