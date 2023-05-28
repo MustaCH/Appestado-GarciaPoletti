@@ -5,7 +5,10 @@ import { styles } from "./styles";
 const ProductItem = ({ item, onSelected }) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.containerTouchable} onPress={onSelected}>
+      <TouchableOpacity
+        style={styles.containerTouchable}
+        onPress={() => onSelected(item)}
+      >
         <View>
           <Text style={styles.name}>{item.name}</Text>
         </View>

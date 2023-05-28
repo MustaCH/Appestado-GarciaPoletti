@@ -22,17 +22,20 @@ export const styles = StyleSheet.create({
 
   description: {
     fontFamily: "Poppins-Regular",
-    textAlign: "center",
+    textAlign: "left",
     paddingVertical: 15,
+    marginHorizontal: 25,
   },
 
   brand: {
     fontFamily: "Poppins-Light",
+    marginBottom: 15,
   },
 
   image: {
-    height: 500,
-    width: 500,
+    height: 350,
+    width: 350,
     borderRadius: 10,
+    marginTop: 15,
   },
 });

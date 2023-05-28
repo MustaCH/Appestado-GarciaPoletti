@@ -14,19 +14,14 @@ const Product = ({ route }) => {
         <Image
           resizeMode="contain"
           source={{
-            uri: "https://front.dev.malditohard.com.ar/img/migration/PC-GAMER-AMD-RYZEN-3-3200G-A320-8GB-480GB-GABINETE-KIT.webp",
+            uri: product.image,
           }}
           style={styles.image}
         />
-        <Text style={styles.name}>Product</Text>
-        <Text style={styles.price}>$123456</Text>
-        <Text style={styles.description}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </Text>
-        <Text style={styles.brand}>Marca: Asus</Text>
+        <Text style={styles.name}>{product.name}</Text>
+        <Text style={styles.price}>${product.price}</Text>
+        <Text style={styles.description}>{product.description}</Text>
+        <Text style={styles.brand}>Marca: {product.brand}</Text>
       </View>
     </ScrollView>
   );
